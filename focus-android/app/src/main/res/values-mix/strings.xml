@@ -54,7 +54,6 @@
     <string name="menu_remove_from_shortcuts">Stoó ña xina</string>
 
     <!-- Menu item: Shows information about features and changes that are new to this version -->
-    <string name="menu_whats_new" moz:RemovedIn="116" tools:ignore="UnusedResources">Ña tsa\'a</string>
     <string name="menu_settings">Nu samu</string>
     <string name="menu_about">Tsaa ña</string>
     <string name="menu_help">Chinchee</string>
@@ -85,10 +84,8 @@
          sharing an URL. -->
     <string name="share_dialog_title">Kua’a nu\'u</string>
 
-    <!-- While a browsing session is active (in the foreground or background) we will show a notification
-         so that the user doesn't forget about the website still being open. This text is shown in
-         the notification. Clicking the notification will have the same effect as clicking the "erase"
-         button in the application. -->
+    <string name="notification_erase_title_android_14">Stòo ña ndúkuku sata</string>
+
     <string name="notification_erase_text">Stòo ña ntukuku sata</string>
 
     <!-- Notification action to open Focus and resume the current browsing session. -->
@@ -834,6 +831,9 @@
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Skua´a kuakaa</string>
 
+    <!-- Dialog message shown when some changes are made on studies -->
+    <string name="studies_restart_app">La aplicación se cerrará para aplicar los cambios</string>
+
     <!-- Title of the remove studies button -->
     <string name="studies_remove">Xitaá</string>
 
@@ -895,6 +895,10 @@
     The new line here must be kept as the second half of the string is clickable for the user. -->
     <string name="tip_disable_tracking_protection">¿Ntu satiñu vii sitio ya´a?\n Xita protección de rastreo </string>
 
+    <!-- Tip displayed on home view explaining how to add sites to homescreen
+    Argument 1 will be replaced with a line break in the application.-->
+    <string name="tip_add_to_homescreen"><![CDATA[kuntyee sitio ña tyeu ndikii nu %1$s Menú > Tyika xina]]></string>
+
     <!-- Tip displayed on home view explaining how to make Focus the default browser
     Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
     The new line here must be kept as the second half of the string is clickable for the user. -->
@@ -925,8 +929,13 @@
 
     <!-- Preference title for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
     <string name="preference_safe_browsing_title">Kasi sitio vaa tsi ña stavi</string>
+    <!-- Preference summary for safe browsing which when enabled, blocks dangerous or deceptive webpages that may include phishing or malware -->
+    <string name="preference_safe_browsing_summary">Kasi sitio vaa tsi ña stavi, sitio nu inka kue aplicaciones tsi software vaa.</string>
     <!-- Title of the preference to enable "HTTPS-Only" mode -->
     <string name="preference_https_only_title"> HTTPS</string>
+
+    <!-- Description of the preference to enable "HTTPS-Only" mode. -->
+    <string name="preference_https_only_summary3">Kunu  kuntyeu sitio tatyu un protocolo HTTPS cifrado.</string>
 
     <!-- Preference for exceptions tracking protection -->
     <string name="preference_exceptions">Excepciones</string>
@@ -996,6 +1005,10 @@
     <!-- Placeholder text for the input field of rename top site-->
     <string name="placeholder_rename_top_site">Sivi siki</string>
 
+    <!-- Text for context menu additional note.
+    %1$s is a placeholder for the app name. -->
+    <string name="contextmenu_erased_images_note2">Tutu ndatavu ña inka vaa compartidas &lt;b&gt;ma&lt;/b&gt; sntoi ta ku stuu ña ntsinu nu %1$s</string>
+
     <!-- Theme Preferences -->
     <!-- Preference category for changing default theme to dark or light mode -->
     <string name="preferences_theme">Tema</string>
@@ -1035,8 +1048,19 @@
     close button from promote search widget dialog. -->
     <string name="promote_search_widget_dialog_content_description">Kasi</string>
 
+    <!-- Content description (not visible, for screen readers etc.): This is the description for
+    picture of search widget from promote search widget dialog. -->
+    <string name="promote_search_widget_dialog_picture_content_description">Dnuku Widget </string>
+
     <!-- This is the title of promote search widget dialog. -->
     <string name="promote_search_widget_dialog_title">¡Koo ña ntsinu ! 🎉</string>
+
+    <!-- Banner Info Message than will appear when user first enters in the app. The location is at the toolbar. -->
+    <string name="cfr_for_start_browsing">Kitsa tsi sesión ku ntyeé seé tya ku kasiko ku rastreador tsi ntyi ka ña\'a.</string>
+
+    <!-- This is the subtitle of promote search widget dialog. %1$s will get replaced with the name
+    of the app (e.g. "Focus") -->
+    <string name="promote_search_widget_dialog_subtitle">Te dejaremos con tu navegación privada, pero podés conseguir un inicio más rápido la próxima vez con el widget de %1$s en la pantalla de inicio.</string>
 
     <!-- This is te text from add search widget to home screen button .The button is located on
     promote search widget dialog. -->
